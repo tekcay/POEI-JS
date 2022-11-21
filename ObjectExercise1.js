@@ -1,15 +1,10 @@
 class Village {
-    constructor() {
-        this.nbVillageois = 1;
-        this.nbBois = 100;
-        this.nbPierre = 100;
-        this.nbOr = 0;
-        this.Bâtiments = ["HDV"];
-    }
-
-    //custom
-    static CustomVillage(nbVillageois, nbBois, nbPierre, nbOr, Bâtiments) {
-        return new Village(nbVillageois, nbBois, nbPierre, nbOr, Bâtiments)
+    constructor(nbVillageois, nbBois, nbPierre, nbOr, Bâtiments) {
+        this.nbVillageois = nbVillageois;
+        this.nbBois = nbBois;
+        this.nbPierre = nbPierre;
+        this.nbOr = nbOr;
+        this.Bâtiments = Bâtiments;
     }
 
     static DefaultVillage() {
